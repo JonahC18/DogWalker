@@ -1,5 +1,5 @@
-public class DogWalker
-{
+public class DogWalker {
+
     /** The maximum number of dogs this walker can walk simultaneously
      per hour */
     private int maxDogs;
@@ -44,7 +44,7 @@ public class DogWalker
         while(startHour <= endHour) {
             int dogs = walkDogs(startHour);
             pay += dogs * 5;
-            if (dogs == maxDogs || startHour >= 0 && startHour <= 17)
+            if (dogs == maxDogs || startHour >= 9 && startHour <= 17)
                 pay += 3;
             startHour++;
         }
